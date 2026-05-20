@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+gem "rails", "~> 8.0.0"
+gem "twitter-bootstrap-rails", path: "../.."
+gem "propshaft"
+gem "jquery-rails"
+gem "puma"
