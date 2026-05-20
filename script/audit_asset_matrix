@@ -200,6 +200,7 @@ run_case "rails_6_1_sprockets" "~> 6.1.7" "6.1" "sprockets"
 run_case "rails_7_2_sprockets" "~> 7.2.0" "7.2" "sprockets"
 run_case "rails_7_2_propshaft" "~> 7.2.0" "7.2" "propshaft"
 run_case "rails_8_0_propshaft" "~> 8.0.0" "8.0" "propshaft"
+run_case "rails_8_1_propshaft" "~> 8.1.0" "8.1" "propshaft"
 
 cat "$MATRIX_ROWS" >> "$REPORT_PATH"
 printf '\n## Case details\n' >> "$REPORT_PATH"
