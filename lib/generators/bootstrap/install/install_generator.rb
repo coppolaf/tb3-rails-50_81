@@ -72,7 +72,18 @@ module Bootstrap
 
     private
       def use_less?
-        stylesheets_type == 'less'
+        return false unless stylesheets_type == 'less'
+
+        if rails_version_allows_less?
+          true
+        else
+          say_status :warning, "Skipping legacy 'less' install on Rails #{Rails::VERSION::STRING}: supported only up to Rails 7.2. Falling back to static CSS.", :yellow
+          false
+        end
+      end
+
+      def rails_version_allows_less?
+        Gem::Version.new(Rails::VERSION::STRING) <= Gem::Version.new('7.2.0')
       end
 
       def use_coffeescript?
