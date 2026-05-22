@@ -1,7 +1,0 @@
-source "https://rubygems.org"
-
-gem "rails", "~> 7.2.0"
-gem "twitter-bootstrap-rails", git: "https://github.com/coppolaf/tb3-rails-50_81"
-gem "sprockets-rails"
-gem "jquery-rails"
-gem "puma"
